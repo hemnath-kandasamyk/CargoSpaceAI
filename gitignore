@@ -1,0 +1,53 @@
+# === Environment & Secrets ===
+.env
+.env.local
+*.env
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# === Database ===
+*.db
+*.sqlite
+*.sqlite3
+
+# === Alembic (keep migration scripts, ignore local artifacts) ===
+# (versions/ directory itself should be committed — do not ignore it)
+
+# === Node / Frontend (for when frontend/ is added) ===
+node_modules/
+dist/
+build/
+.vite/
+*.local
+
+# === ML Artifacts (for when ml/ is added) ===
+# Trained models can be large — track via Git LFS instead of committing raw,
+# or uncomment below if you intend to keep them out of git entirely:
+# ml/saved_models/*.joblib
+# ml/datasets/*.csv
+
+# === IDE / OS ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === Docker ===
+*.pid
+
+# === Logs ===
+*.log
+logs/
